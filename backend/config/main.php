@@ -13,6 +13,14 @@ return [
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
+        'assetManager' => [
+            'bundles' => [
+                'dmstr\web\AdminLteAsset' => [
+                    'skin' => 'skin-red-light',
+                ],
+            ],
+        ],
+
         'request' => [
             'csrfParam' => '_csrf-backend',
         ],
